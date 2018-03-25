@@ -1,0 +1,17 @@
+DigitalClock_tb
+	AMPM
+	BEEP
+	CLK
+	HOUR
+	MINHIGH
+	MINLOW
+	MSEC1ST
+	MSEC2ND
+	RST
+	SECHIGH
+	SECLOW
+	SW_F1
+	SW_F2
+	SW_MODE
+	U0
+		...

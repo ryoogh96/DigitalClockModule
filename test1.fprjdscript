@@ -1,0 +1,126 @@
+if [ -f   /opt/Xilinx/14.1/ISE_DS/settings32.sh ]; then 
+ source /opt/Xilinx/14.1/ISE_DS/settings32.sh >> /tmp/log 
+fi
+if [ -f   /opt/Xilinx/14.1/ISE_DS/settings64.sh ]; then
+ source /opt/Xilinx/14.1/ISE_DS/settings64.sh >> /tmp/log
+fi
+ 
+echo PNULib= $FLOWRIANLIBRARY/PNULib/ISim/PNULib >> DigitalClock_tb.init
+echo work=./work >> DigitalClock_tb.init
+echo verilog work PNU_AND4.v >> DigitalClock_tb.prj
+echo verilog work PNU_XOR2.v >> DigitalClock_tb.prj
+echo verilog work PNU_OR3.v >> DigitalClock_tb.prj
+echo verilog work PNU_AND3.v >> DigitalClock_tb.prj
+echo verilog work PNU_OR2.v >> DigitalClock_tb.prj
+echo verilog work PNU_AND2.v >> DigitalClock_tb.prj
+echo verilog work PNU_NOT.v >> DigitalClock_tb.prj
+echo verilog work PNU_DFF.v >> DigitalClock_tb.prj
+echo verilog work AlarmControlnstance.v >> DigitalClock_tb.prj
+echo verilog work PNU_ONE.v >> DigitalClock_tb.prj
+echo verilog work PNU_JKFF.v >> DigitalClock_tb.prj
+echo verilog work counter10.v >> DigitalClock_tb.prj
+echo verilog work counter6.v >> DigitalClock_tb.prj
+echo verilog work PNU_XNOR2.v >> DigitalClock_tb.prj
+echo verilog work PNU_MUX8.v >> DigitalClock_tb.prj
+echo verilog work PNU_OR4.v >> DigitalClock_tb.prj
+echo verilog work PNU_DFF_Ce.v >> DigitalClock_tb.prj
+echo verilog work PNU_MUX2.v >> DigitalClock_tb.prj
+echo verilog work newcount1000.v >> DigitalClock_tb.prj
+echo verilog work StwControl.v >> DigitalClock_tb.prj
+echo verilog work TimeControl.v >> DigitalClock_tb.prj
+echo verilog work PNU_NOR3.v >> DigitalClock_tb.prj
+echo verilog work PNU_NOR2.v >> DigitalClock_tb.prj
+echo verilog work Counter24.v >> DigitalClock_tb.prj
+echo verilog work counter60.v >> DigitalClock_tb.prj
+echo verilog work CompareTime.v >> DigitalClock_tb.prj
+echo verilog work LtoP.v >> DigitalClock_tb.prj
+echo verilog work seg7toMux.v >> DigitalClock_tb.prj
+echo verilog work week08_7segment.v >> DigitalClock_tb.prj
+echo verilog work counter12Decoder.v >> DigitalClock_tb.prj
+echo verilog work comSelector.v >> DigitalClock_tb.prj
+echo verilog work count8.v >> DigitalClock_tb.prj
+echo verilog work STOPWATCH.v >> DigitalClock_tb.prj
+echo verilog work TIME.v >> DigitalClock_tb.prj
+echo verilog work PNU_ZERO.v >> DigitalClock_tb.prj
+echo verilog work PNU_XNOR3.v >> DigitalClock_tb.prj
+echo verilog work MuxB4.v >> DigitalClock_tb.prj
+echo verilog work ALARM.v >> DigitalClock_tb.prj
+echo verilog work ModeSet.v >> DigitalClock_tb.prj
+echo verilog work DigitalClock.v >> DigitalClock_tb.prj
+echo verilog work DigitalClock_tb.v >> DigitalClock_tb.prj
+echo vcd dumpfile DigitalClock_tb.vcd >> DigitalClock_tb.tcl
+echo vcd dumpvars -m /DigitalClock_tb -l 1 >> DigitalClock_tb.tcl
+echo run 10000 ns >> DigitalClock_tb.tcl
+echo vcd dumpflush >> DigitalClock_tb.tcl
+echo quit -f >> DigitalClock_tb.tcl
+fuse -top work.DigitalClock_tb -init DigitalClock_tb.init -prj DigitalClock_tb.prj  -lib PNULib -o DigitalClock_tb.exe
+./DigitalClock_tb.exe -tclbatch DigitalClock_tb.tcl
+rm DigitalClock_tb.tcl
+rm DigitalClock_tb.init
+rm DigitalClock_tb.prj
+rm fuse.xmsgs
+rm fuseRelaunch.cmd
+rm isim.wdb
+rm -f DigitalClock_tb.exe fuse.log isim.log
+rm -rf isim
+rm list of verilog or VHDL files
+rm -rf ./work
+rm -rf PNU_AND2.v
+rm -rf PNU_AND3.v
+rm -rf PNU_AND4.v
+rm -rf PNU_AND8.v
+rm -rf PNU_BUF.v
+rm -rf PNU_DFF.v
+rm -rf PNU_DFF_Ce.v
+rm -rf PNU_JKFF.v
+rm -rf PNU_MUX2.v
+rm -rf PNU_MUX4.v
+rm -rf PNU_MUX8.v
+rm -rf PNU_NAND2.v
+rm -rf PNU_NAND3.v
+rm -rf PNU_NAND4.v
+rm -rf PNU_NAND8.v
+rm -rf PNU_NOR2.v
+rm -rf PNU_NOR3.v
+rm -rf PNU_NOR4.v
+rm -rf PNU_NOR8.v
+rm -rf PNU_NOT.v
+rm -rf PNU_ONE.v
+rm -rf PNU_OR2.v
+rm -rf PNU_OR3.v
+rm -rf PNU_OR4.v
+rm -rf PNU_OR8.v
+rm -rf PNU_SRAM.v
+rm -rf PNU_TBUF.v
+rm -rf PNU_XNOR2.v
+rm -rf PNU_XNOR3.v
+rm -rf PNU_XNOR4.v
+rm -rf PNU_XOR2.v
+rm -rf PNU_XOR3.v
+rm -rf PNU_XOR4.v
+rm -rf PNU_ZERO.v
+rm -rf DigitalClock.v
+rm -rf ALARM.v
+rm -rf AlarmControl.v
+rm -rf AlarmControlSch.v
+rm -rf CompareTime.v
+rm -rf comSelector.v
+rm -rf count8.v
+rm -rf counter6.v
+rm -rf counter10.v
+rm -rf counter12Decoder.v
+rm -rf Counter24.v
+rm -rf counter60.v
+rm -rf LtoP.v
+rm -rf ModeSet.v
+rm -rf MuxB4.v
+rm -rf newcount1000.v
+rm -rf seg7toMux.v
+rm -rf STOPWATCH.v
+rm -rf StwControl.v
+rm -rf TIME.v
+rm -rf TimeControl.v
+rm -rf week08_7segment.v
+rm -rf DigitalClock_tb.v
+rm -rf AlarmControlnstance.v
+echo Finish simulation!!

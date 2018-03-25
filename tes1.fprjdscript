@@ -1,0 +1,88 @@
+if [ -f   /opt/Xilinx/14.1/ISE_DS/settings32.sh ]; then 
+ source /opt/Xilinx/14.1/ISE_DS/settings32.sh >> /tmp/log 
+fi
+if [ -f   /opt/Xilinx/14.1/ISE_DS/settings64.sh ]; then
+ source /opt/Xilinx/14.1/ISE_DS/settings64.sh >> /tmp/log
+fi
+ 
+echo PNULib= $FLOWRIANLIBRARY/PNULib/ISim/PNULib >> STOPWATCH_tb.init
+echo work=./work >> STOPWATCH_tb.init
+echo verilog work PNU_XOR2.v >> STOPWATCH_tb.prj
+echo verilog work PNU_OR3.v >> STOPWATCH_tb.prj
+echo verilog work PNU_AND3.v >> STOPWATCH_tb.prj
+echo verilog work PNU_OR2.v >> STOPWATCH_tb.prj
+echo verilog work PNU_AND2.v >> STOPWATCH_tb.prj
+echo verilog work PNU_NOT.v >> STOPWATCH_tb.prj
+echo verilog work PNU_DFF.v >> STOPWATCH_tb.prj
+echo verilog work PNU_ONE.v >> STOPWATCH_tb.prj
+echo verilog work PNU_JKFF.v >> STOPWATCH_tb.prj
+echo verilog work counter10.v >> STOPWATCH_tb.prj
+echo verilog work counter6.v >> STOPWATCH_tb.prj
+echo verilog work PNU_AND4.v >> STOPWATCH_tb.prj
+echo verilog work PNU_MUX2.v >> STOPWATCH_tb.prj
+echo verilog work Counter24.v >> STOPWATCH_tb.prj
+echo verilog work newcount1000.v >> STOPWATCH_tb.prj
+echo verilog work counter60.v >> STOPWATCH_tb.prj
+echo verilog work StwControl.v >> STOPWATCH_tb.prj
+echo verilog work STOPWATCH.v >> STOPWATCH_tb.prj
+echo verilog work STOPWATCH_tb.v >> STOPWATCH_tb.prj
+echo vcd dumpfile STOPWATCH_tb.vcd >> STOPWATCH_tb.tcl
+echo vcd dumpvars -m /STOPWATCH_tb -l 1 >> STOPWATCH_tb.tcl
+echo run 10000 ns >> STOPWATCH_tb.tcl
+echo vcd dumpflush >> STOPWATCH_tb.tcl
+echo quit -f >> STOPWATCH_tb.tcl
+fuse -top work.STOPWATCH_tb -init STOPWATCH_tb.init -prj STOPWATCH_tb.prj  -lib PNULib -o STOPWATCH_tb.exe
+./STOPWATCH_tb.exe -tclbatch STOPWATCH_tb.tcl
+rm STOPWATCH_tb.tcl
+rm STOPWATCH_tb.init
+rm STOPWATCH_tb.prj
+rm fuse.xmsgs
+rm fuseRelaunch.cmd
+rm isim.wdb
+rm -f STOPWATCH_tb.exe fuse.log isim.log
+rm -rf isim
+rm list of verilog or VHDL files
+rm -rf ./work
+rm -rf PNU_AND2.v
+rm -rf PNU_AND3.v
+rm -rf PNU_AND4.v
+rm -rf PNU_AND8.v
+rm -rf PNU_BUF.v
+rm -rf PNU_DFF.v
+rm -rf PNU_DFF_Ce.v
+rm -rf PNU_JKFF.v
+rm -rf PNU_MUX2.v
+rm -rf PNU_MUX4.v
+rm -rf PNU_MUX8.v
+rm -rf PNU_NAND2.v
+rm -rf PNU_NAND3.v
+rm -rf PNU_NAND4.v
+rm -rf PNU_NAND8.v
+rm -rf PNU_NOR2.v
+rm -rf PNU_NOR3.v
+rm -rf PNU_NOR4.v
+rm -rf PNU_NOR8.v
+rm -rf PNU_NOT.v
+rm -rf PNU_ONE.v
+rm -rf PNU_OR2.v
+rm -rf PNU_OR3.v
+rm -rf PNU_OR4.v
+rm -rf PNU_OR8.v
+rm -rf PNU_TBUF.v
+rm -rf PNU_XNOR2.v
+rm -rf PNU_XNOR3.v
+rm -rf PNU_XNOR4.v
+rm -rf PNU_XOR2.v
+rm -rf PNU_XOR3.v
+rm -rf PNU_XOR4.v
+rm -rf PNU_ZERO.v
+rm -rf StwControl.v
+rm -rf StwControl_tb.v
+rm -rf counter6.v
+rm -rf counter10.v
+rm -rf Counter24.v
+rm -rf counter60.v
+rm -rf newcount1000.v
+rm -rf STOPWATCH.v
+rm -rf STOPWATCH_tb.v
+echo Finish simulation!!

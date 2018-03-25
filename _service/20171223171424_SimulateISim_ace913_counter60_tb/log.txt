@@ -1,0 +1,90 @@
+script> if [ -f   /opt/Xilinx/14.1/ISE_DS/settings32.sh ]; then 
+script>  source /opt/Xilinx/14.1/ISE_DS/settings32.sh >> /tmp/log 
+script> fi
+script> if [ -f   /opt/Xilinx/14.1/ISE_DS/settings64.sh ]; then
+script>  source /opt/Xilinx/14.1/ISE_DS/settings64.sh >> /tmp/log
+script> fi
+script>  
+script> echo PNULib= $FLOWRIANLIBRARY/PNULib/ISim/PNULib >> counter60_tb.init
+script> echo work=./work >> counter60_tb.init
+script> echo verilog work PNU_AND4.v >> counter60_tb.prj
+script> echo verilog work PNU_AND3.v >> counter60_tb.prj
+script> echo verilog work PNU_NOT.v >> counter60_tb.prj
+script> echo verilog work counter60.v >> counter60_tb.prj
+script> echo verilog work counter60_tb.v >> counter60_tb.prj
+script> echo vcd dumpfile counter60_tb.vcd >> counter60_tb.tcl
+script> echo vcd dumpvars -m /counter60_tb -l 1 >> counter60_tb.tcl
+script> echo run 10000 ns >> counter60_tb.tcl
+script> echo vcd dumpflush >> counter60_tb.tcl
+INFO:Simulator:908 - Using init file passed via -initfile option
+   "counter60_tb.init"
+Running: /opt/Xilinx/14.1/ISE_DS/ISE/bin/lin/unwrapped/fuse -top work.counter60_tb -init counter60_tb.init -prj counter60_tb.prj -lib PNULib -o counter60_tb.exe
+ISim P.15xf (signature 0x8ddf5b5d)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8
+Determining compilation order of HDL files
+Analyzing Verilog file "PNU_AND4.v" into library work
+Analyzing Verilog file "PNU_AND3.v" into library work
+Analyzing Verilog file "PNU_NOT.v" into library work
+Analyzing Verilog file "counter60.v" into library work
+Analyzing Verilog file "counter60_tb.v" into library work
+Starting static elaboration
+ERROR:HDLCompiler:1654 - "counter60.v" Line 44: Instantiating <s3> from unknown module <counter6>
+ERROR:HDLCompiler:1654 - "counter60.v" Line 72: Instantiating <s12> from unknown module <counter10>
+ERROR:Simulator:778 - Static elaboration of top level Verilog design unit(s) in library work failed
+script> echo quit -f >> counter60_tb.tcl
+flowrian_net_script.sh: line 42: ./counter60_tb.exe: No such file or directory
+script> fuse -top work.counter60_tb -init counter60_tb.init -prj counter60_tb.prj  -lib PNULib -o counter60_tb.exe
+script> ./counter60_tb.exe -tclbatch counter60_tb.tcl
+script> rm counter60_tb.tcl
+script> rm counter60_tb.init
+script> rm counter60_tb.prj
+script> rm fuse.xmsgs
+rm: cannot remove `isim.wdb': No such file or directory
+script> rm fuseRelaunch.cmd
+script> rm isim.wdb
+script> rm -f counter60_tb.exe fuse.log isim.log
+rm: cannot remove `list': No such file or directory
+rm: cannot remove `of': No such file or directory
+rm: cannot remove `verilog': No such file or directory
+rm: cannot remove `or': No such file or directory
+rm: cannot remove `VHDL': No such file or directory
+rm: cannot remove `files': No such file or directory
+script> rm -rf isim
+script> rm list of verilog or VHDL files
+script> rm -rf ./work
+script> rm -rf PNU_AND2.v
+script> rm -rf PNU_AND3.v
+script> rm -rf PNU_AND4.v
+script> rm -rf PNU_AND8.v
+script> rm -rf PNU_BUF.v
+script> rm -rf PNU_DFF.v
+script> rm -rf PNU_DFF_Ce.v
+script> rm -rf PNU_JKFF.v
+script> rm -rf PNU_MUX2.v
+script> rm -rf PNU_MUX4.v
+script> rm -rf PNU_MUX8.v
+script> rm -rf PNU_NAND2.v
+script> rm -rf PNU_NAND3.v
+script> rm -rf PNU_NAND4.v
+script> rm -rf PNU_NAND8.v
+script> rm -rf PNU_NOR2.v
+script> rm -rf PNU_NOR3.v
+script> rm -rf PNU_NOR4.v
+script> rm -rf PNU_NOR8.v
+script> rm -rf PNU_NOT.v
+script> rm -rf PNU_ONE.v
+script> rm -rf PNU_OR2.v
+script> rm -rf PNU_OR3.v
+script> rm -rf PNU_OR4.v
+script> rm -rf PNU_OR8.v
+script> rm -rf PNU_TBUF.v
+script> rm -rf PNU_XNOR2.v
+script> rm -rf PNU_XNOR3.v
+script> rm -rf PNU_XNOR4.v
+script> rm -rf PNU_XOR2.v
+script> rm -rf PNU_XOR3.v
+script> rm -rf PNU_XOR4.v
+script> rm -rf PNU_ZERO.v
+script> rm -rf counter60.v
+Finish simulation!!

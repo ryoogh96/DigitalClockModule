@@ -1,0 +1,136 @@
+StimulianSaveFile
+LanguageType Verilog
+tbModuleName TIME_tb
+ModuleName TIME
+TimeUnit ns
+TotalTime 10000
+GridInterval 100
+Parameters
+End
+Port
+-1 ! 1 Binary CLK singlebit in 0 0 ClockInformation 0 100 0.5 0 ClockEnd PortEnd 0
+-1 " 1 Binary RST singlebit in 0 0 PortEnd 0
+-1 # 1 Binary SW_F1 singlebit in 0 0 PortEnd 0
+-1 $ 1 Binary SW_F2 singlebit in 0 0 PortEnd 0
+-1 % 1 Binary TIMESET_RUN singlebit in 0 0 PortEnd 0
+0 & 1 Binary TIM_AMPM singlebit out 0 0 PortEnd 0
+0 ' 0 Binary TIM_HOUR multibit out 3 0 Children + [3] , [2] - [1] . [0] ChildrenEnd PortEnd 0
+0 / 0 Binary TIM_MINHIGH multibit out 2 0 Children 2 [2] 3 [1] 4 [0] ChildrenEnd PortEnd 0
+0 5 0 Binary TIM_MINLOW multibit out 3 0 Children 9 [3] : [2] ; [1] < [0] ChildrenEnd PortEnd 0
+0 = 0 Binary TIM_SECHIGH multibit out 2 0 Children @ [2] A [1] B [0] ChildrenEnd PortEnd 0
+0 C 0 Binary TIM_SECLOW multibit out 3 0 Children G [3] H [2] I [1] J [0] ChildrenEnd PortEnd 0
+End
+pixelTimeRatio 5
+HorzZoomOutScale 143
+WavesHorzScrollBarMax 0
+WavesHorzScrollBarPosition 0
+WavesHorzScrollBarEnabled -1
+DefaultVertInterval 32
+UnScaledDefaultVertInterval 16
+UnScaledDefaultVertSignalHeight 10
+WavesVertScrollBarMax 100
+WavesVertScrollBarPosition 0
+WavesVertScrollBarEnabled 0
+Vars
+s!
+t0
+0 0 1 1
+0 100 100 0
+50 100 100 1
+s"
+t0
+0 0 1 1
+100 0 1 0
+s#
+t0
+0 700 2 0
+600 600 2 1
+1300 700 2 0
+1900 0 1 1
+s$
+t0
+0 900 2 0
+800 200 2 1
+1100 400 2 0
+1400 200 2 1
+1700 500 2 0
+2100 200 2 1
+2400 0 1 0
+s%
+t0
+0 0 1 0
+500 0 1 1
+s&
+t0
+0 0 1 0
+s+
+t0
+0 0 1 0
+s,
+t0
+0 0 1 0
+s-
+t0
+0 0 1 0
+s.
+t0
+0 0 1 0
+s2
+t0
+0 0 1 0
+s3
+t0
+0 0 1 0
+s4
+t0
+0 0 1 0
+s9
+t0
+0 0 1 0
+s:
+t0
+0 0 1 0
+s;
+t0
+0 0 1 0
+s<
+t0
+0 0 1 0
+s@
+t0
+0 0 1 0
+sA
+t0
+0 0 1 0
+sB
+t0
+0 0 1 0
+sG
+t0
+0 0 1 0
+sH
+t0
+0 0 1 0
+sI
+t0
+0 0 1 0
+sJ
+t0
+0 0 1 0
+End
+Cursors
+100
+End
+ActiveCursorIndex 0
+versionCode
+20070511
+psrFileName
+D:\201524452
+systemCExportSimulationTime
+0
+systemCExportSimulationTimeUnit
+0
+systemCProbes
+10000
+systemCProbes
+End

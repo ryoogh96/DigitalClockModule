@@ -1,0 +1,93 @@
+script> if [ -f   /opt/Xilinx/14.1/ISE_DS/settings32.sh ]; then 
+script>  source /opt/Xilinx/14.1/ISE_DS/settings32.sh >> /tmp/log 
+script> fi
+script> if [ -f   /opt/Xilinx/14.1/ISE_DS/settings64.sh ]; then
+script>  source /opt/Xilinx/14.1/ISE_DS/settings64.sh >> /tmp/log
+script> fi
+script>  
+script> echo PNULib= $FLOWRIANLIBRARY/PNULib/ISim/PNULib >> counter10.init
+script> echo work=./work >> counter10.init
+script> echo verilog work PNU_XOR2.v >> counter10.prj
+script> echo verilog work PNU_OR3.v >> counter10.prj
+script> echo verilog work PNU_OR2.v >> counter10.prj
+script> echo verilog work PNU_AND3.v >> counter10.prj
+script> echo verilog work PNU_NOT.v >> counter10.prj
+script> echo verilog work PNU_AND2.v >> counter10.prj
+script> echo verilog work PNU_DFF.v >> counter10.prj
+INFO:Simulator:908 - Using init file passed via -initfile option
+   "counter10.init"
+Running: /opt/Xilinx/14.1/ISE_DS/ISE/bin/lin/unwrapped/fuse -top work.counter10 -init counter10.init -prj counter10.prj -lib PNULib -o counter10.exe
+ISim P.15xf (signature 0x8ddf5b5d)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8
+Determining compilation order of HDL files
+Analyzing Verilog file "PNU_XOR2.v" into library work
+Analyzing Verilog file "PNU_OR3.v" into library work
+Analyzing Verilog file "PNU_OR2.v" into library work
+Analyzing Verilog file "PNU_AND3.v" into library work
+Analyzing Verilog file "PNU_NOT.v" into library work
+Analyzing Verilog file "PNU_AND2.v" into library work
+Analyzing Verilog file "PNU_DFF.v" into library work
+Analyzing Verilog file "counter10.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 36132 KB
+Fuse CPU Usage: 1650 ms
+Compiling module PNU_DFF
+Compiling module PNU_AND2
+Compiling module PNU_NOT
+Compiling module PNU_AND3
+Compiling module PNU_OR2
+Compiling module PNU_OR3
+Compiling module PNU_XOR2
+Compiling module counter10
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 8 Verilog Units
+Built simulation executable counter10.exe
+Fuse Memory Usage: 79168 KB
+Fuse CPU Usage: 1690 ms
+GCC CPU Usage: 580 ms
+script> echo verilog work counter10.v >> counter10.prj
+script> fuse -top work.counter10 -init counter10.init -prj counter10.prj  -lib PNULib -o counter10.exe
+script> rm counter10.init
+script> rm counter10.prj
+script> rm fuse.xmsgs
+script> rm fuseRelaunch.cmd
+script> rm counter10.exe  fuse.log 
+script> rm -rf isim
+script> rm -rf ./work
+script> rm -rf PNU_AND2.v
+script> rm -rf PNU_AND3.v
+script> rm -rf PNU_AND4.v
+script> rm -rf PNU_AND8.v
+script> rm -rf PNU_BUF.v
+script> rm -rf PNU_DFF.v
+script> rm -rf PNU_DFF_Ce.v
+script> rm -rf PNU_JKFF.v
+script> rm -rf PNU_MUX2.v
+script> rm -rf PNU_MUX4.v
+script> rm -rf PNU_MUX8.v
+script> rm -rf PNU_NAND2.v
+script> rm -rf PNU_NAND3.v
+script> rm -rf PNU_NAND4.v
+script> rm -rf PNU_NAND8.v
+script> rm -rf PNU_NOR2.v
+script> rm -rf PNU_NOR3.v
+script> rm -rf PNU_NOR4.v
+script> rm -rf PNU_NOR8.v
+script> rm -rf PNU_NOT.v
+script> rm -rf PNU_ONE.v
+script> rm -rf PNU_OR2.v
+script> rm -rf PNU_OR3.v
+script> rm -rf PNU_OR4.v
+script> rm -rf PNU_OR8.v
+script> rm -rf PNU_TBUF.v
+script> rm -rf PNU_XNOR2.v
+script> rm -rf PNU_XNOR3.v
+script> rm -rf PNU_XNOR4.v
+script> rm -rf PNU_XOR2.v
+script> rm -rf PNU_XOR3.v
+script> rm -rf PNU_XOR4.v
+script> rm -rf PNU_ZERO.v
+Finish compilation!!

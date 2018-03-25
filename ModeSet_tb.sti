@@ -1,0 +1,68 @@
+StimulianSaveFile
+LanguageType Verilog
+tbModuleName ModeSet_tb
+ModuleName ModeSet
+TimeUnit ns
+TotalTime 10000
+GridInterval 100
+Parameters
+End
+Port
+-1 % 1 Binary SW_MODE singlebit in 0 0 PortEnd 0
+-1 " 1 Binary CLK singlebit in 0 0 ClockInformation 0 100 0.5 0 ClockEnd PortEnd 0
+-1 # 1 Binary RST singlebit in 0 0 PortEnd 0
+0 ! 1 Binary ALARMSET_RUN singlebit out 0 0 PortEnd 0
+0 $ 1 Binary STOPWATCH_RUN singlebit out 0 0 PortEnd 0
+0 & 1 Binary TIMESET_RUN singlebit out 0 0 PortEnd 0
+End
+pixelTimeRatio 5
+HorzZoomOutScale 80
+WavesHorzScrollBarMax 229369
+WavesHorzScrollBarPosition 0
+WavesHorzScrollBarEnabled -1
+DefaultVertInterval 32
+UnScaledDefaultVertInterval 16
+UnScaledDefaultVertSignalHeight 10
+WavesVertScrollBarMax 100
+WavesVertScrollBarPosition 0
+WavesVertScrollBarEnabled 0
+Vars
+s%
+t0
+0 800 2 0
+200 800 2 1
+1100 300 4 0
+1300 300 3 1
+s"
+t0
+0 0 1 1
+0 100 100 0
+50 100 100 1
+s#
+t0
+0 0 1 1
+100 0 1 0
+s!
+t0
+0 0 1 0
+s$
+t0
+0 0 1 0
+s&
+t0
+0 0 1 0
+End
+Cursors
+0
+End
+ActiveCursorIndex 0
+versionCode
+20070511
+psrFileName
+D:\201524452\_analyze\ModeSet.psr
+systemCExportSimulationTime
+10000
+systemCExportSimulationTimeUnit
+10000
+systemCProbes
+End

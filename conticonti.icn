@@ -1,0 +1,346 @@
+SymbolianIcn ver1.00(2006.04.27)
+ModuleName conticonti
+LanguageType Veirlog
+GridInterval 8
+MillimetersIn100RealScaledUnit 25
+ZoomOutScale 32
+NumberOfHorzPapaers 1
+NumberOfVertPapaers 1
+IfDrawModuleName True
+IfDrawPortnameText True
+ModuleNameDrawPosition middle
+Boxes
+Box Left: 368 Top: 560 ,Right: 472 ,Bottom: 1072
+End
+Parameters
+End
+Ports
+Port Left: 344 Top: 568 ,SymbolSideLeft: 368 ,SymbolSideTop: 568
+Portname: p00 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 584 ,SymbolSideLeft: 368 ,SymbolSideTop: 584
+Portname: p01 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 600 ,SymbolSideLeft: 368 ,SymbolSideTop: 600
+Portname: p02 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 616 ,SymbolSideLeft: 368 ,SymbolSideTop: 616
+Portname: p03 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 632 ,SymbolSideLeft: 368 ,SymbolSideTop: 632
+Portname: p04 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 648 ,SymbolSideLeft: 368 ,SymbolSideTop: 648
+Portname: p05 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 664 ,SymbolSideLeft: 368 ,SymbolSideTop: 664
+Portname: p06 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 680 ,SymbolSideLeft: 368 ,SymbolSideTop: 680
+Portname: p07 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 696 ,SymbolSideLeft: 368 ,SymbolSideTop: 696
+Portname: p08 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 712 ,SymbolSideLeft: 368 ,SymbolSideTop: 712
+Portname: p09 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 728 ,SymbolSideLeft: 368 ,SymbolSideTop: 728
+Portname: p10 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 744 ,SymbolSideLeft: 368 ,SymbolSideTop: 744
+Portname: p11 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 760 ,SymbolSideLeft: 368 ,SymbolSideTop: 760
+Portname: p12 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 776 ,SymbolSideLeft: 368 ,SymbolSideTop: 776
+Portname: p13 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 792 ,SymbolSideLeft: 368 ,SymbolSideTop: 792
+Portname: p14 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 808 ,SymbolSideLeft: 368 ,SymbolSideTop: 808
+Portname: p15 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 824 ,SymbolSideLeft: 368 ,SymbolSideTop: 824
+Portname: p16 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 840 ,SymbolSideLeft: 368 ,SymbolSideTop: 840
+Portname: p17 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 856 ,SymbolSideLeft: 368 ,SymbolSideTop: 856
+Portname: p18 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 872 ,SymbolSideLeft: 368 ,SymbolSideTop: 872
+Portname: p19 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 888 ,SymbolSideLeft: 368 ,SymbolSideTop: 888
+Portname: p20 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 904 ,SymbolSideLeft: 368 ,SymbolSideTop: 904
+Portname: p21 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 920 ,SymbolSideLeft: 368 ,SymbolSideTop: 920
+Portname: p22 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 936 ,SymbolSideLeft: 368 ,SymbolSideTop: 936
+Portname: p23 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 952 ,SymbolSideLeft: 368 ,SymbolSideTop: 952
+Portname: p24 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 968 ,SymbolSideLeft: 368 ,SymbolSideTop: 968
+Portname: p25 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 984 ,SymbolSideLeft: 368 ,SymbolSideTop: 984
+Portname: p26 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 1000 ,SymbolSideLeft: 368 ,SymbolSideTop: 1000
+Portname: p27 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 1016 ,SymbolSideLeft: 368 ,SymbolSideTop: 1016
+Portname: p28 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 1032 ,SymbolSideLeft: 368 ,SymbolSideTop: 1032
+Portname: p29 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 1048 ,SymbolSideLeft: 368 ,SymbolSideTop: 1048
+Portname: p30 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 344 Top: 1064 ,SymbolSideLeft: 368 ,SymbolSideTop: 1064
+Portname: p31 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 568 ,SymbolSideLeft: 472 ,SymbolSideTop: 568
+Portname: p32 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 584 ,SymbolSideLeft: 472 ,SymbolSideTop: 584
+Portname: p33 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 600 ,SymbolSideLeft: 472 ,SymbolSideTop: 600
+Portname: p34 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 616 ,SymbolSideLeft: 472 ,SymbolSideTop: 616
+Portname: p35 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 632 ,SymbolSideLeft: 472 ,SymbolSideTop: 632
+Portname: p36 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 648 ,SymbolSideLeft: 472 ,SymbolSideTop: 648
+Portname: p37 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 664 ,SymbolSideLeft: 472 ,SymbolSideTop: 664
+Portname: p38 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 680 ,SymbolSideLeft: 472 ,SymbolSideTop: 680
+Portname: p39 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 696 ,SymbolSideLeft: 472 ,SymbolSideTop: 696
+Portname: p40 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 712 ,SymbolSideLeft: 472 ,SymbolSideTop: 712
+Portname: p41 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 728 ,SymbolSideLeft: 472 ,SymbolSideTop: 728
+Portname: p42 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 744 ,SymbolSideLeft: 472 ,SymbolSideTop: 744
+Portname: p43 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 760 ,SymbolSideLeft: 472 ,SymbolSideTop: 760
+Portname: p44 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 776 ,SymbolSideLeft: 472 ,SymbolSideTop: 776
+Portname: p45 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 792 ,SymbolSideLeft: 472 ,SymbolSideTop: 792
+Portname: p46 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 808 ,SymbolSideLeft: 472 ,SymbolSideTop: 808
+Portname: p47 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 824 ,SymbolSideLeft: 472 ,SymbolSideTop: 824
+Portname: p48 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 840 ,SymbolSideLeft: 472 ,SymbolSideTop: 840
+Portname: p49 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 856 ,SymbolSideLeft: 472 ,SymbolSideTop: 856
+Portname: p50 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 872 ,SymbolSideLeft: 472 ,SymbolSideTop: 872
+Portname: p51 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 888 ,SymbolSideLeft: 472 ,SymbolSideTop: 888
+Portname: p52 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 904 ,SymbolSideLeft: 472 ,SymbolSideTop: 904
+Portname: p53 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 920 ,SymbolSideLeft: 472 ,SymbolSideTop: 920
+Portname: p54 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 936 ,SymbolSideLeft: 472 ,SymbolSideTop: 936
+Portname: p55 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 952 ,SymbolSideLeft: 472 ,SymbolSideTop: 952
+Portname: p56 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 968 ,SymbolSideLeft: 472 ,SymbolSideTop: 968
+Portname: p57 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 984 ,SymbolSideLeft: 472 ,SymbolSideTop: 984
+Portname: p58 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 1000 ,SymbolSideLeft: 472 ,SymbolSideTop: 1000
+Portname: p59 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 1016 ,SymbolSideLeft: 472 ,SymbolSideTop: 1016
+Portname: p60 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 1032 ,SymbolSideLeft: 472 ,SymbolSideTop: 1032
+Portname: p61 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 1048 ,SymbolSideLeft: 472 ,SymbolSideTop: 1048
+Portname: p62 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+Port Left: 496 Top: 1064 ,SymbolSideLeft: 472 ,SymbolSideTop: 1064
+Portname: p63 ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
+0
+,RV:
+0
+End
+Ellipses
+End
+Lines
+End
+Arcs
+End
+Texts
+End

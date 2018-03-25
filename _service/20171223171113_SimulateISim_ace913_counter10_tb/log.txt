@@ -1,0 +1,120 @@
+script> if [ -f   /opt/Xilinx/14.1/ISE_DS/settings32.sh ]; then 
+script>  source /opt/Xilinx/14.1/ISE_DS/settings32.sh >> /tmp/log 
+script> fi
+script> if [ -f   /opt/Xilinx/14.1/ISE_DS/settings64.sh ]; then
+script>  source /opt/Xilinx/14.1/ISE_DS/settings64.sh >> /tmp/log
+script> fi
+script>  
+script> echo PNULib= $FLOWRIANLIBRARY/PNULib/ISim/PNULib >> counter10_tb.init
+script> echo work=./work >> counter10_tb.init
+script> echo verilog work PNU_XOR2.v >> counter10_tb.prj
+script> echo verilog work PNU_OR3.v >> counter10_tb.prj
+script> echo verilog work PNU_OR2.v >> counter10_tb.prj
+script> echo verilog work PNU_AND3.v >> counter10_tb.prj
+script> echo verilog work PNU_NOT.v >> counter10_tb.prj
+script> echo verilog work PNU_AND2.v >> counter10_tb.prj
+script> echo verilog work PNU_DFF.v >> counter10_tb.prj
+script> echo verilog work counter10.v >> counter10_tb.prj
+script> echo verilog work counter10_tb.v >> counter10_tb.prj
+script> echo vcd dumpfile counter10_tb.vcd >> counter10_tb.tcl
+script> echo vcd dumpvars -m /counter10_tb -l 1 >> counter10_tb.tcl
+script> echo run 10000 ns >> counter10_tb.tcl
+script> echo vcd dumpflush >> counter10_tb.tcl
+INFO:Simulator:908 - Using init file passed via -initfile option
+   "counter10_tb.init"
+Running: /opt/Xilinx/14.1/ISE_DS/ISE/bin/lin/unwrapped/fuse -top work.counter10_tb -init counter10_tb.init -prj counter10_tb.prj -lib PNULib -o counter10_tb.exe
+ISim P.15xf (signature 0x8ddf5b5d)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8
+Determining compilation order of HDL files
+Analyzing Verilog file "PNU_XOR2.v" into library work
+Analyzing Verilog file "PNU_OR3.v" into library work
+Analyzing Verilog file "PNU_OR2.v" into library work
+Analyzing Verilog file "PNU_AND3.v" into library work
+Analyzing Verilog file "PNU_NOT.v" into library work
+Analyzing Verilog file "PNU_AND2.v" into library work
+Analyzing Verilog file "PNU_DFF.v" into library work
+Analyzing Verilog file "counter10.v" into library work
+Analyzing Verilog file "counter10_tb.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 36132 KB
+Fuse CPU Usage: 1530 ms
+Compiling module PNU_DFF
+Compiling module PNU_AND2
+Compiling module PNU_NOT
+Compiling module PNU_AND3
+Compiling module PNU_OR2
+Compiling module PNU_OR3
+Compiling module PNU_XOR2
+Compiling module counter10
+Compiling module counter10_tb
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 9 Verilog Units
+Built simulation executable counter10_tb.exe
+Fuse Memory Usage: 80192 KB
+Fuse CPU Usage: 1570 ms
+GCC CPU Usage: 840 ms
+script> echo quit -f >> counter10_tb.tcl
+ISim P.15xf (signature 0x8ddf5b5d)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+script> fuse -top work.counter10_tb -init counter10_tb.init -prj counter10_tb.prj  -lib PNULib -o counter10_tb.exe
+script> ./counter10_tb.exe -tclbatch counter10_tb.tcl
+script> rm counter10_tb.tcl
+script> rm counter10_tb.init
+script> rm counter10_tb.prj
+script> rm fuse.xmsgs
+script> rm fuseRelaunch.cmd
+script> rm isim.wdb
+script> rm -f counter10_tb.exe fuse.log isim.log
+rm: cannot remove `list': No such file or directory
+rm: cannot remove `of': No such file or directory
+rm: cannot remove `verilog': No such file or directory
+rm: cannot remove `or': No such file or directory
+rm: cannot remove `VHDL': No such file or directory
+rm: cannot remove `files': No such file or directory
+script> rm -rf isim
+script> rm list of verilog or VHDL files
+script> rm -rf ./work
+script> rm -rf PNU_AND2.v
+script> rm -rf PNU_AND3.v
+script> rm -rf PNU_AND4.v
+script> rm -rf PNU_AND8.v
+script> rm -rf PNU_BUF.v
+script> rm -rf PNU_DFF.v
+script> rm -rf PNU_DFF_Ce.v
+script> rm -rf PNU_JKFF.v
+script> rm -rf PNU_MUX2.v
+script> rm -rf PNU_MUX4.v
+script> rm -rf PNU_MUX8.v
+script> rm -rf PNU_NAND2.v
+script> rm -rf PNU_NAND3.v
+script> rm -rf PNU_NAND4.v
+script> rm -rf PNU_NAND8.v
+script> rm -rf PNU_NOR2.v
+script> rm -rf PNU_NOR3.v
+script> rm -rf PNU_NOR4.v
+script> rm -rf PNU_NOR8.v
+script> rm -rf PNU_NOT.v
+script> rm -rf PNU_ONE.v
+script> rm -rf PNU_OR2.v
+script> rm -rf PNU_OR3.v
+script> rm -rf PNU_OR4.v
+script> rm -rf PNU_OR8.v
+script> rm -rf PNU_TBUF.v
+script> rm -rf PNU_XNOR2.v
+script> rm -rf PNU_XNOR3.v
+script> rm -rf PNU_XNOR4.v
+script> rm -rf PNU_XOR2.v
+script> rm -rf PNU_XOR3.v
+script> rm -rf PNU_XOR4.v
+script> rm -rf PNU_ZERO.v
+script> rm -rf counter10.v
+Finish simulation!!
